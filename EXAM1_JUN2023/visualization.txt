@@ -1,0 +1,53 @@
+GameUser {
+    playerName: "Ash Ketchum",
+    playerDeck: {
+        stack: { // Example stack, would vary depending on game logic
+            // StackList is defined as an int, so this could be an index, etc.
+        }, 
+        space: {
+            data: [{
+                dataDetail: {
+                    pokeID: 1,
+                    pokeName: "Charizard",
+                    pokeType: {
+                        mainType: 1, // Example value, could vary
+                        strongAgainst: 2, // Example value, could vary
+                        weakAgainst: 3, // Example value, could vary
+                        resistantTo: 4, // Example value, could vary
+                        vulnerableTo: 5 // Example value, could vary
+                    },
+                    pokeStats: [100, 50, 50, 60, 60, 80, 1]
+                },
+                pos: 0
+            }, 
+            // Other Pokemon would go here, according to the game's logic
+            ],
+            avail: 1
+        },
+    },
+    playerTile: {
+        list: [{
+            pokeID: 1,
+            pokeName: "Charizard",
+            pokeType: {
+                mainType: 1, // Example value, could vary
+                strongAgainst: 2, // Example value, could vary
+                weakAgainst: 3, // Example value, could vary
+                resistantTo: 4, // Example value, could vary
+                vulnerableTo: 5 // Example value, could vary
+            },
+            pokeStats: [100, 50, 50, 60, 60, 80, 1]
+        },
+        // Other Pokemon would go here, according to the game's logic
+        ],
+        start: 0,
+        end: 1
+    },
+    playerDiscard: {
+        pokeList: [ // Initialized but currently empty 
+            // The Pokemon being discarded would be here
+        ],
+        count: 0,
+        max: 100
+    }
+}
